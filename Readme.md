@@ -1,0 +1,15 @@
+WorkFlow of Project
+
+Github Repo[x]    
+Clone Repo[x]
+Read Files[x]
+Chunk Code[x]
+Generate Embeddings [x]
+Store in Qudrant[x]
+User Error[]
+Genrate Embeddings[]
+Qdrant Search[]
+Top releveant chunks[]
+send to Groq []
+Root Cause Analysis []
+Generate Fix[]
