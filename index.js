@@ -8,15 +8,16 @@ const getAllFiles = require('./readFile');
 const chunk = require('./chunksText');
 const createEmbbeding = require('./createEmbedding');
 const qdrant = require('./qdrant');
+const createCollection = require('./createCollection');
 const app = express();
 const git = simpleGit()
-
+createCollection();
 
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json())
 
-app.post('v1/repo',async (req,res) => {
+app.post('/v1/repo',async (req,res) => {
     let pointid = 1;
     try {
         // REMOVED 'await' from req.body as it is an object, not a promise
